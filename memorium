@@ -1,0 +1,30 @@
+#!/usr/bin/bash 
+
+if [[ $1 = "--make" ]] ;then
+	clear
+	echo "[Hello, welcome to memorium]"
+	if [ -d ~/.memorium ]
+	then
+		echo "Allready installed."
+	else
+		mkdir ~/.memorium
+		touch ~/.memorium/memorium.log
+	fi
+	printf "Enter name of contact: "
+	read name
+	printf "Enter details by this order.[Phone number/Birthday/Realation/...]"
+	read detail 
+	echo ""
+	echo $name $detail >> ~/.memorium/memorium.log
+elif [[ $1 = "--read" ]] ;then
+	cat ~/.memorium/memorium.log
+elif [[ $1 = "--help" ]] ;then
+	echo "[Hello, welcome to memorium]"
+
+	echo ""
+	echo "--read	show stored data"
+	echo "--make	make new contact"		
+else 
+	echo "Wrong parameter please run memorium --help for structure"
+fi
+
