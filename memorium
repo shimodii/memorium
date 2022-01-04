@@ -25,6 +25,6 @@ elif [[ $1 = "--help" ]] ;then
 	echo "--read	show stored data"
 	echo "--make	make new contact"		
 else 
-	echo "Wrong parameter please run memorium --help for structure"
+	echo "Wrong parameter, please run memorium --help for structure"
 fi
 
