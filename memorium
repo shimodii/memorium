@@ -12,7 +12,7 @@ if [[ $1 = "--make" ]] ;then
 	fi
 	printf "Enter name of contact: "
 	read name
-	printf "Enter details by this order.[Phone number/Birthday/Realation/...]"
+	printf "Enter details: "
 	read detail 
 	echo ""
 	echo $name $detail >> ~/.memorium/memorium.log
