@@ -5,22 +5,22 @@
 help () {
 	echo "--[Welcome to memorium]--"
 	echo ""
-	echo "--cloud	 save the entered data to cloud"
-	echo "--init	 initialize path and DIRs"
+	echo "--cloud	   save the entered data to cloud"
+	echo "--init	   initialize path and DIRs"
 	echo "--read     show stored data"
         echo "--write    make new contact"
 }
 init () {
-	
+	echo hello	
 }
 read () {
-
+	echo hello
 }
 write () {
-
+	echo hello
 }
 netsave () {
-
+	echo hello
 }
 
 help
