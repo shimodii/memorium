@@ -8,10 +8,12 @@ help () {
 	echo "--cloud	   save the entered data to cloud"
 	echo "--init	   initialize path and DIRs"
 	echo "--read     show stored data"
-        echo "--write    make new contact"
+    echo "--write    make new contact"
+    echo _____________________________________________
 }
 init () {
-	echo hello	
+	echo "--[Welcome to memorium]--"
+	echo "memorium use git and github"
 }
 read () {
 	echo hello
@@ -23,4 +25,17 @@ netsave () {
 	echo hello
 }
 
-help
+if [[ $1 = "--write" ]]; then
+	clear 
+	write
+elif [[ $1 = "--read" ]]; then
+	clear
+	read
+elif [[ $1 = "--init" ]]; then
+	clear
+	init
+elif [[ $1 = "--cloud" ]]; then
+	clear
+	cloud
+else
+	echo "Wrong arg, please run *memorium --help* for help"
