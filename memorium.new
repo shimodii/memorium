@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#FUNCTIONS
+
+help () {
+	echo "--[Welcome to memorium]--"
+	echo ""
+	echo "--cloud	 save the entered data to cloud"
+	echo "--init	 initialize path and DIRs"
+	echo "--read     show stored data"
+        echo "--write    make new contact"
+}
+init () {
+	
+}
+read () {
+
+}
+write () {
+
+}
+netsave () {
+
+}
+
+help
